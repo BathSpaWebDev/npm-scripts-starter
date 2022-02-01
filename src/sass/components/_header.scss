@@ -1,0 +1,29 @@
+@use '../config/variables' as v;
+
+header.header {
+  display: flex;
+  justify-content:space-between;
+  background-color: v.$colorBlue;
+
+  .header__right{
+
+    nav { //nav parent starts here
+        background-color: v.$colorGreen;
+
+        ul {
+          display:flex;
+          margin:0;
+          li {
+          list-style:none;
+          margin-right:1rem;
+            a {
+              color:#fff;
+            }
+          }
+        }
+    } //nav parent ends here
+    @media (min-width: 1024px) {
+      width:800px;
+    }
+  }
+}
